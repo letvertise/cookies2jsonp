@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    script.
+        function logCookies(cookies) {
+            console.log(cookies);
+        }
+    script(src='http://localhost:3000/c2j?callback=logCookies')
